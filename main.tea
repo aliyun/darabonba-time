@@ -1,0 +1,28 @@
+
+/**
+ * This is a time module
+ */
+
+/**
+ * Return the time stamp string,unit second
+ * @return the time string, e.g 1491888244
+ */
+static function unix(): string;
+
+/**
+ * Return the UTC time string now
+ * @return the time string, e.g 2020-11-24 09:44:45.426237 +0000 UTC
+ */
+static function UTC(): string;
+
+/**
+ * Suspends the current thread for the specified number of milliseconds.
+ */
+static function sleep(t: int64): void;
+
+/**
+ * Format the UTC time now with the layout
+ * @param layout the format of time, e.g yyyyMMdd hh:mm a EEEE
+ * @return the time string, e.g 20060102 15:04 PM Monday
+ */
+static function format(layout: string): string;

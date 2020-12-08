@@ -1,0 +1,42 @@
+{
+	"scope": "darabonba",
+	"name": "Time",
+	"version": "0.0.1",
+	"main": "./main.tea",
+	"releases": {
+		"go": "github.com/alibabacloud-go/darabonba-time/service:v1.0.0",
+		"ts": "@alicloud/darabonba-time:^1.0.0",
+		"csharp": "AlibabaCloud.DarabonbaTime:1.0.0",
+		"java": "com.aliyun:darabonba-time:0.0.1",
+		"php": "alibabacloud/darabonba-time:^0.1.0",
+		"python": "alibabacloud_darabonba_time:0.0.1"
+	},
+	"java": {
+		"package": "com.aliyun.darabonbatime",
+		"packageInfo": {
+		  "groupId": "com.aliyun",
+		  "artifactId": "darabonba-time",
+		  "version": "0.0.1"
+		}
+	},
+	"csharp": {
+		"namespace": "AlibabaCloud.DarabonbaTime",
+		"className": "Time",
+		"packageInfo": {
+			"name": "time"
+		}
+	},
+	"php": {
+		"package": "AlibabaCloud.Darabonba.Time",
+		"clientName": "Time",
+		"packageInfo": {
+			"name": "alibabacloud/darabonba-time",
+			"desc": "Alibaba Cloud Darabonba Time Library for PHP",
+			"github": "https://github.com/aliyun/darabonba-time"
+		}
+	},
+	"python": {
+		"package": "alibabacloud_darabonba_time",
+		"clientName": "client"
+	}
+}
