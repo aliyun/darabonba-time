@@ -15,7 +15,7 @@ public class Client {
      * @return the time string, e.g 1491888244
      */
     public static String unix() throws Exception {
-        return String.valueOf(System.currentTimeMillis());
+        return String.valueOf(System.currentTimeMillis() / 1000);
     }
 
     /**
