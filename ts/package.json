@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@alicloud/tea-typescript": "^1.0.0",
-    "moment": "^1.0.0"
+    "moment": "^2.29.4"
   },
   "files": [
     "dist",
