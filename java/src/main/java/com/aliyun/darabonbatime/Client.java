@@ -1,11 +1,9 @@
 // This file is auto-generated, don't edit it. Thanks.
 package com.aliyun.darabonbatime;
 
-import com.aliyun.tea.*;
-
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
-import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 public class Client {
 
@@ -24,14 +22,15 @@ public class Client {
      * @return the time string, e.g 2020-11-24 09:44:45.426237 +0000 UTC
      */
     public static String UTC() throws Exception {
-        return LocalDateTime.now(ZoneOffset.UTC).toString();
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSSSSS '+0000 UTC'", Locale.ENGLISH);
+        return df.format(new Date());
     }
 
     /**
      * Suspends the current thread for the specified number of milliseconds.
      */
     public static void sleep(Long t) throws Exception {
-        sleep(t);
+        Thread.sleep(t);
     }
 
     /**
@@ -41,6 +40,7 @@ public class Client {
      * @return the time string, e.g 20060102 15:04 PM Monday
      */
     public static String format(String layout) throws Exception {
-        return LocalDateTime.now(ZoneOffset.UTC).format(DateTimeFormatter.ofPattern(layout));
+        SimpleDateFormat df = new SimpleDateFormat(layout, Locale.ENGLISH);
+        return df.format(new Date());
     }
 }
