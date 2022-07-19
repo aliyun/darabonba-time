@@ -13,7 +13,7 @@
   "author": "Alibaba Cloud SDK Team",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@types/mocha": "^7.0.1",
+    "@types/mocha": "^9.1.1",
     "codecov": "^3.6.1",
     "@types/node": "^12.12.26",
     "mocha": "^6.2.0",
