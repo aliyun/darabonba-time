@@ -16,7 +16,7 @@
     "@types/mocha": "^9.1.1",
     "codecov": "^3.6.1",
     "@types/node": "^18.0.6",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "nyc": "^15.0.0",
     "source-map-support": "^0.5.16",
     "ts-node": "^10.9.1",
